@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="UserInfoCell" customModule="CoreDataTrip" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="323"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="323"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBp-up-eyL">
+                        <rect key="frame" x="0.0" y="0.0" width="353" height="323"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user-img" translatesAutoresizingMaskIntoConstraints="NO" id="5qu-TH-uPQ">
+                                <rect key="frame" x="70.5" y="5" width="212" height="212"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5qu-TH-uPQ" secondAttribute="height" multiplier="1:1" id="3tb-J0-zQl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avangard Radomir" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StJ-uB-0Jj">
+                                <rect key="frame" x="117.5" y="237" width="118.5" height="17"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5qu-TH-uPQ" firstAttribute="centerX" secondItem="TBp-up-eyL" secondAttribute="centerX" id="2xk-bJ-C4K"/>
+                            <constraint firstItem="5qu-TH-uPQ" firstAttribute="top" secondItem="TBp-up-eyL" secondAttribute="top" constant="5" id="QmN-PZ-ZdR"/>
+                            <constraint firstItem="StJ-uB-0Jj" firstAttribute="centerX" secondItem="5qu-TH-uPQ" secondAttribute="centerX" id="gA3-GV-5Sh"/>
+                            <constraint firstItem="StJ-uB-0Jj" firstAttribute="top" secondItem="5qu-TH-uPQ" secondAttribute="bottom" constant="20" id="q32-XW-Bl2"/>
+                            <constraint firstItem="5qu-TH-uPQ" firstAttribute="width" secondItem="TBp-up-eyL" secondAttribute="width" multiplier="0.6" id="w4K-19-dby"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TBp-up-eyL" secondAttribute="trailing" id="Atq-tI-mmJ"/>
+                <constraint firstItem="TBp-up-eyL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DXI-YV-8HJ"/>
+                <constraint firstItem="TBp-up-eyL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="OjV-SK-Cbc"/>
+                <constraint firstAttribute="bottom" secondItem="TBp-up-eyL" secondAttribute="bottom" id="mNu-6r-nGf"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="353" height="323"/>
+            <connections>
+                <outlet property="backView" destination="TBp-up-eyL" id="W26-0i-SvT"/>
+                <outlet property="imgViewUser" destination="5qu-TH-uPQ" id="5Q1-nG-MHH"/>
+                <outlet property="lblName" destination="StJ-uB-0Jj" id="UVg-EX-stW"/>
+            </connections>
+            <point key="canvasLocation" x="157.59999999999999" y="12.143928035982009"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="user-img" width="230" height="230"/>
+    </resources>
+</document>
